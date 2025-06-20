@@ -1,1 +1,2 @@
-print("Loading data ... This is load.py")
+print("✅ Data loading simulated.")
+
