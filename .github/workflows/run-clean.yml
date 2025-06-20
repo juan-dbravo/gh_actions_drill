@@ -20,4 +20,7 @@ jobs:
     - name: Run transform.py
       run: python transform.py
 
+    - name: Run load.py
+      run: python load.py
+
 
