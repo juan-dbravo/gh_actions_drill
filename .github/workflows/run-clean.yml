@@ -17,4 +17,7 @@ jobs:
     - name: Run clean.py
       run: python clean.py
 
+    - name: Run transform.py
+      run: python transform.py
+
 
