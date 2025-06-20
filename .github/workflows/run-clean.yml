@@ -16,9 +16,15 @@ jobs:
 
     - name: Run clean.py
       run: python clean.py
+    
+    - name: Check clean.py output
+      run: test -f data_cleaned.csv
 
     - name: Run transform.py
       run: python transform.py
+    
+    - name: Check transform.py output
+      run: test -f data_transformed.csv
 
     - name: Run load.py
       run: python load.py
