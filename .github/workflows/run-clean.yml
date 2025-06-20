@@ -23,15 +23,18 @@ jobs:
       run: python clean.py
     
     - name: Check clean.py output
-      run: test -f data_cleaned.csv
+      run: test -f data/clean/data_cleaned.csv
 
     - name: Run transform.py
       run: python transform.py
     
     - name: Check transform.py output
-      run: test -f data_transformed.csv
+      run: test -f data/transformed/data_transformed.csv
 
     - name: Run load.py
       run: python load.py
+
+    - name: Check load.py output
+      run: test -f data/final/final_output.csv
 
 
