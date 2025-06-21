@@ -1,4 +1,4 @@
-name: Run clean.py on push
+name: Run ETL pipeline on push
 
 on: [push]
 
@@ -36,5 +36,8 @@ jobs:
 
     - name: Check load.py output
       run: test -f data/final/final_output.csv
+
+    - name: Run tests
+      run: pytest tests/
 
 
